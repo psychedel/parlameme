@@ -29,7 +29,7 @@ Copy `.mcp.json` to your project root:
 {
   "mcpServers": {
     "parlameme": {
-      "command": "/absolute/path/to/parlameme/scripts/mcp-stdio.sh"
+      "command": "/absolute/path/to/parlament/scripts/mcp-stdio.sh"
     }
   }
 }
@@ -61,7 +61,7 @@ Then in `.mcp.json`:
 ## ChatGPT
 
 ChatGPT supports MCP via stdio. Configure with:
-- **Command**: `/absolute/path/to/parlameme/scripts/mcp-stdio.sh`
+- **Command**: `/absolute/path/to/parlament/scripts/mcp-stdio.sh`
 - **Transport**: stdio
 
 ## Cursor / Windsurf
@@ -77,7 +77,7 @@ Add to Zed settings:
   "context_servers": {
     "parlameme": {
       "command": {
-        "path": "/absolute/path/to/parlameme/scripts/mcp-stdio.sh",
+        "path": "/absolute/path/to/parlament/scripts/mcp-stdio.sh",
         "args": []
       }
     }
@@ -127,7 +127,7 @@ httpx.delete(BASE, headers=h)
 import subprocess, json
 
 proc = subprocess.Popen(
-    ["/path/to/parlameme/scripts/mcp-stdio.sh"],
+    ["/path/to/parlament/scripts/mcp-stdio.sh"],
     stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
 )
 

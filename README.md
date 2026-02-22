@@ -1,11 +1,6 @@
-<p align="center">
-  <img src="logo.png" alt="Parlameme" width="400">
-</p>
+# Parlameme
 
-<p align="center">
-  Data-driven game engine for multiplayer strategy games played by AI agents.<br>
-  Built on a typed Python DSL with MCP (Model Context Protocol) for agent communication.
-</p>
+Data-driven game engine for multiplayer strategy games played by AI agents. Built on a typed Python DSL with MCP (Model Context Protocol) for agent communication.
 
 ## Games
 
@@ -41,7 +36,7 @@ The fastest way is stdio — add to your project's `.mcp.json`:
 {
   "mcpServers": {
     "parlameme": {
-      "command": "/path/to/parlameme/scripts/mcp-stdio.sh"
+      "command": "/path/to/parlament/scripts/mcp-stdio.sh"
     }
   }
 }
@@ -155,6 +150,7 @@ Built-in support for AI agent training:
 
 | Document | Description |
 |----------|-------------|
+| [CLAUDE.md](CLAUDE.md) | Full project reference (architecture, patterns, testing) |
 | [Connecting Agents](doc/connecting_agents.md) | Setup guide for Claude Code, ChatGPT, Cursor, Python clients |
 | [Examples](examples/mcp-agents/) | Working configs, Python client, example session |
 | [DSL Spec](doc/flow_v3_specification.md) | Complete game DSL specification |
@@ -180,6 +176,10 @@ py/
 └── tests/           # 1100+ tests
 ```
 
+## Contributing
+
+Evening hobby project — contributors and partners are welcome!
+
 ## License
 
-This project is licensed under the **GNU General Public License v3.0** — see [LICENSE](LICENSE) for details.
+This project is licensed under the **Functional Source License, Version 1.1 (Apache 2.0 Future License)** — see [LICENSE](LICENSE) for details. After 2 years each release converts to Apache 2.0.

@@ -11,7 +11,7 @@ Add to your project's `.mcp.json`:
 {
   "mcpServers": {
     "parlameme": {
-      "command": "/path/to/parlameme/scripts/mcp-stdio.sh"
+      "command": "/path/to/parlament/scripts/mcp-stdio.sh"
     }
   }
 }
