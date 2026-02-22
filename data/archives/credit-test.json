@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "game_id": "duel",
+  "rules_hash": "1c6b03bd1fb7c0d1",
+  "seed": 42,
+  "players": [
+    "alice",
+    "bob"
+  ],
+  "decisions": [],
+  "timestamp": 1770550485.9432003,
+  "metadata": {
+    "session_id": "credit-test"
+  }
+}

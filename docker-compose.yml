@@ -1,0 +1,49 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: parlameme
+      POSTGRES_USER: parlameme
+      POSTGRES_PASSWORD: ${PG_PASSWORD:-parlameme-dev}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./sql/init.sql:/docker-entrypoint-initdb.d/01-init.sql
+    ports:
+      - "${PG_PORT:-5432}:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U parlameme"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    restart: unless-stopped
+
+  directus:
+    image: directus/directus:11
+    environment:
+      SECRET: ${DIRECTUS_SECRET:-change-me-in-production-256bit-random}
+      ADMIN_EMAIL: ${DIRECTUS_ADMIN_EMAIL:-admin@parlameme.io}
+      ADMIN_PASSWORD: ${DIRECTUS_ADMIN_PASSWORD:-parlameme-admin}
+      DB_CLIENT: pg
+      DB_HOST: postgres
+      DB_PORT: "5432"
+      DB_DATABASE: parlameme
+      DB_USER: parlameme
+      DB_PASSWORD: ${PG_PASSWORD:-parlameme-dev}
+      WEBSOCKETS_ENABLED: "true"
+      CACHE_ENABLED: "true"
+      CACHE_AUTO_PURGE: "true"
+      CACHE_TTL: "5m"
+      CORS_ENABLED: "true"
+      CORS_ORIGIN: "true"
+    ports:
+      - "${DIRECTUS_PORT:-8055}:8055"
+    volumes:
+      - directus_uploads:/directus/uploads
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+  directus_uploads:

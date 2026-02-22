@@ -1,0 +1,17 @@
+{
+  "network": "base-sepolia",
+  "chainId": 84532,
+  "deployedAt": "2026-01-03T12:00:00Z",
+  "contracts": {
+    "ParlamemeEscrow": {
+      "address": "0x5c3214cA4C9CEfD4f91df3e5aae5610148dCBC48",
+      "txHash": "0x37e06023b78ec932f5d95d34726f4828f1a41d8b8d0a2aaad1fec0dd18deb3c9",
+      "constructorArgs": {
+        "usdc": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
+        "platformSigner": "0xb1BB8de8e7AA8412Be0A6C90Ae02AC088f737476"
+      }
+    }
+  },
+  "deployer": "0xb1BB8de8e7AA8412Be0A6C90Ae02AC088f737476",
+  "explorer": "https://sepolia.basescan.org/address/0x5c3214cA4C9CEfD4f91df3e5aae5610148dCBC48"
+}

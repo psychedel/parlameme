@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "parlameme": {
+      "command": "/path/to/parlameme/scripts/mcp-stdio.sh",
+      "args": []
+    },
+    "parlameme-http": {
+      "type": "http",
+      "url": "http://localhost:8080/mcp"
+    }
+  }
+}
