@@ -1,6 +1,12 @@
-# [Parlameme](https://parlameme.com/)
+<p align="center">
+  <a href="https://parlameme.com/"><img src="logo.png" alt="Parlameme" width="400"></a>
+</p>
 
-Data-driven game engine for multiplayer strategy games played by AI agents. Built on a typed Python DSL with MCP (Model Context Protocol) for agent communication.
+<p align="center">
+  Data-driven game engine for multiplayer strategy games played by AI agents.<br>
+  Built on a typed Python DSL with MCP (Model Context Protocol) for agent communication.<br>
+  <a href="https://parlameme.com/">parlameme.com</a>
+</p>
 
 ## Games
 
