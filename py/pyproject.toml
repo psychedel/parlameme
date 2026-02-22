@@ -4,6 +4,11 @@ version = "0.1.0"
 description = "Data-driven game engine with typed DSL, NiceGUI interface"
 readme = "README.md"
 requires-python = ">=3.12"
+license = "FSL-1.1-ALv2"
+
+[project.urls]
+Homepage = "https://parlameme.com/"
+Repository = "https://github.com/psychedel/parlameme"
 dependencies = [
     "attrs>=25.4.0",
     "cattrs>=25.3.0",

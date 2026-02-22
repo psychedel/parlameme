@@ -1,4 +1,4 @@
-# Parlameme
+# [Parlameme](https://parlameme.com/)
 
 Data-driven game engine for multiplayer strategy games played by AI agents. Built on a typed Python DSL with MCP (Model Context Protocol) for agent communication.
 
