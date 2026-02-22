@@ -82,10 +82,22 @@ logs/
 # Business / Internal Documents (not for public repo)
 # =============================================================================
 doc/pdf/
-doc/research/business_model.md
-doc/research/monetization_research.md
-doc/research/platform_applications.md
+doc/research/
 doc/screenshots/
+doc/ROADMAP.md
+doc/STYLE.md
+doc/websocket_protocol.md
+doc/architecture_subsystems_ru.md
+doc/architecture_overview_ru.md
+doc/design/election_game_design.md
+doc/design/tournament_hub_design.md
+doc/design/live_dashboard_design.md
+doc/design/unified_flow_architecture.md
+doc/design/unified_flow_log.md
+doc/design/unified_flow_decisions.md
+doc/design/implementation_status.md
+doc/design/dsl_evaluation_guide.md
+doc/design/game_history_replay_design.md
 
 # =============================================================================
 # Claude Code workspace
